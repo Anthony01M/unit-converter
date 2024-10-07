@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="container">
+        <h1>Unit Converter</h1>
+        <form id="converter-form">
+            <label for="unit-type">Select Unit Type:</label>
+            <select id="unit-type">
+                <option value="length">Length</option>
+                <option value="weight">Weight</option>
+                <option value="temperature">Temperature</option>
+            </select>
+
+            <label for="input-value">Enter Value:</label>
+            <input type="number" id="input-value" required>
+
+            <label for="from-unit">From:</label>
+            <select id="from-unit"></select>
+
+            <label for="to-unit">To:</label>
+            <select id="to-unit"></select>
+
+            <button type="button" onclick="convert()">Convert</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="particles-config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
